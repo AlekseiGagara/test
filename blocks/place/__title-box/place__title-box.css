@@ -1,0 +1,10 @@
+.place__title-box {
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px 31px;
+}

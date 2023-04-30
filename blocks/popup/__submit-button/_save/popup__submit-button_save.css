@@ -1,0 +1,9 @@
+.popup__submit-button_save {
+  background-image: url("../../../../images/submit-button-mobile.svg");
+}
+
+@media (min-width: 700px) {
+  .popup__submit-button_save {
+    background-image: url("../../../../images/submit-button-1280.svg");
+  }
+}

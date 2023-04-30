@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./pages/index.css" rel="stylesheet">
+  <title>Место</title>
+</head>
+<body class="page">
+  <header class="header">
+    <img
+      class="header__logo"
+      src="./images/header-logo.svg"
+      alt="Логотип">
+  </header>
+  <main class="content">
+
+      <!-- секция profile -->
+
+    <section class="user-profile">
+      <img src="./images/profile-image.jpg"
+      alt="фото пользователя"
+      class="user-profile__image">
+      <div class="user-profile__name-box">
+        <h1 class="user-profile__name">Жак-Ив Кусто</h1>
+        <button type="button" aria-label="редактировать" class="user-profile__edit-button"></button>
+        <p class="user-profile__description">Исследователь океана</p>
+      </div>
+      <button type="button" aria-label="добавить место" class="user-profile__add-button"></button>
+    </section>
+
+      <!-- секция places -->
+
+    <section class="places">
+
+    </section>
+
+      <!-- edit popup -->
+
+    <div class="popup popup__edit">
+      <div class="popup__overlay"></div>
+      <div class="popup__container">
+        <form action="#" class="popup__form" name="editProfileForm">
+          <h2 class="popup__heading">Редактировать профиль</h2>
+          <input type="text"
+          name="editInputUsername"
+          class="popup__input popup__input_profile_username">
+          <input type="text"
+          name="editInputDescription"
+          class="popup__input popup__input_profile_description">
+          <button type="submit" aria-label="сохранить" class="popup__submit-button popup__submit-button_save"></button>
+        </form>
+        <button type="button" aria-label="закрыть" class="popup__close-button"></button>
+      </div>
+    </div>
+
+    <!-- new place popup -->
+
+    <div class="popup popup__add-card">
+      <div class="popup__overlay"></div>
+      <div class="popup__container">
+        <form action="#" class="popup__form" name="addNewPlaceForm">
+          <h2 class="popup__heading">Новое место</h2>
+          <input type="text"
+          placeholder="Название"
+          name="addInputPlaceTitle"
+          class="popup__input popup__input_place_title">
+          <input type="text"
+          placeholder="Ссылка на картинку"
+          name="addInputPlaceLink"
+          class="popup__input popup__input_place_link">
+          <button type="submit" aria-label="создать" class="popup__submit-button popup__submit-button_create"></button>
+        </form>
+        <button type="button" aria-label="закрыть" class="popup__close-button"></button>
+      </div>
+    </div>
+
+    <!-- image popup -->
+
+    <div class="popup popup__zoom-image">
+      <div class="popup__overlay popup__overlay_image"></div>
+      <figure class="popup__container_image">
+        <img src=""
+        alt=""
+        class="popup__image">
+        <figcaption class="popup__image_caption"></figcaption>
+        <button type="button" aria-label="закрыть" class="popup__close-button"></button>
+      </figure>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">© 2023 Mesto Russia</p>
+  </footer>
+
+  <!-- Template -->
+
+  <template id="place-template">
+    <article class="place">
+      <img src=""
+      alt=""
+      class="place__image">
+      <div class="place__title-box">
+        <h2 class="place__title"></h2>
+        <button type="button" aria-label="кнопка_лайк"
+        class="place__like-button"></button>
+      </div>
+      <button type="button" aria-label="кнопка_удалить"
+      class="place__delete-button"></button>
+    </article>
+  </template>
+  <script src="./script/index.js"></script>
+</body>
+</html>

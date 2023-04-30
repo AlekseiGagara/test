@@ -1,0 +1,33 @@
+.user-profile {
+  width: calc(100% - 38px);
+  margin: 0 auto;
+  padding-top: 42px;
+  display: grid;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media (min-width: 700px) {
+  .user-profile {
+    width: calc(100% - 100px);
+    padding-top: 40px;
+    justify-items: start;
+    grid-template-columns: 120px 1fr 150px;
+    align-items: start;
+  }
+}
+
+@media (min-width: 940px) {
+  .user-profile {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-profile {
+    width: calc(100% - 400px);
+  }
+}

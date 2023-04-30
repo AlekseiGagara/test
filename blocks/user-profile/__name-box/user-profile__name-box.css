@@ -1,0 +1,19 @@
+.user-profile__name-box {
+  margin-top: 26px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 14px 10px;
+  padding-left: 28px;
+  grid-template-columns: 1fr 18px;
+}
+
+@media (min-width: 700px) {
+  .user-profile__name-box {
+    max-width: calc(100% - 50px);
+    gap: 16px 18px;
+    grid-template-columns: 1fr 24px;
+    padding-left: 30px;
+    justify-items: start;
+  }
+}

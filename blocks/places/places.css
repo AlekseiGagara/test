@@ -1,0 +1,37 @@
+.places {
+  width: calc(100% - 38px);
+  margin: 0 auto;
+  padding-top: 36px;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .places {
+    width: calc(100% - 60px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 700px) {
+  .places {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (min-width: 940px) {
+  .places {
+    width: calc(100% - 200px);
+    gap: 20px 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .places {
+    width: calc(100% - 400px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
